@@ -15,6 +15,14 @@ let nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogeli
 */
 
 // CREA TU FUNCION mayusculas aqui:
+  function mayusculas(nombres){
+    car=1
+    for(i=0; i<nombres.length; i++){
+      console.log(nombres[i]);
+    }
+  }
+  
+  mayusculas(nombres);
 
 
 
@@ -23,6 +31,11 @@ let nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogeli
 */
 
 // CREA TU FUNCION numVocales aqui:
+  function numVocales(nombres){
+    for(i=0; i<nombres.length; i++){
+      
+    }
+  }
 
 
 /*
@@ -43,13 +56,27 @@ A) Define un objeto tipo "Perro" que reciba 3 parametros
 1) Nombre
 2) Color
 3) Raza
-
-
-B) Crea 3 objectos  con diferentes valores
-
+*/
+function Perro(nombre, raza, color){
+  this.nombre=nombre;
+  this.raza=raza;
+  this.color=color;
+}
+ 
+//B) Crea 3 objectos  con diferentes valores
+  var perro1=new Perro("Ramon", "Chihuahua", "cafe");
+  var perro2=new Perro("Thaigo", "PastorAleman", "negro");
+  var perro3=new Perro("Rayo", "Bulldog", "negro");
+  
+  
+/*
 C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte. 
-
-
+*/
+  console.log(perro1.nombre);
+  console.log(perro2.color);
+  console.log(perro3.raza);
+  
+  /*
 *****BONUS****
 
 Crea una método en la definición del objeto "Perro" llamado printInfo()  que escriba en consola todas las propiedades del objeto que lo invoca. 
@@ -64,6 +91,7 @@ Deberia escribir en consola
 
 
 */
+
 
 
 
